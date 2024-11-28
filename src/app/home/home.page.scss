@@ -2,3 +2,37 @@
   --overflow: hidden;
   border: 1px solid red;
 }
+
+.center-content {
+  height: 100%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+
+// Mas alto que ancho 
+@media (orientation: portrait) {
+  .center-content {
+    font-size: 15rem;
+  }
+}
+
+// Mas ancho que alto
+@media (orientation: landscape) {
+  .center-content {
+    font-size: 7rem;
+  }
+}
+
+
+
+// @media screen and (min-width: 768px) {
+//   .center-content {
+//     font-size: 2.5rem;
+//   }
+  
+// }
