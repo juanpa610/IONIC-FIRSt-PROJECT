@@ -7,6 +7,25 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  number: number = 0;
+  showNumber: string = '00';
+
+  constructor() {
+  }
+
+  up() {
+    this.number++;
+    this.formatNumber();
+  }
+
+  down() {
+    this.number--;
+    this.formatNumber();
+  }
+
+
+  formatNumber(){
+    this.showNumber = this.number <= 9 ? `0${this.number}` : `${this.number}`;
+  }
 
 }
